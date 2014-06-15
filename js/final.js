@@ -45,6 +45,7 @@ var twitterMapApi = (function(options) {
 				$.ajax({
 					url: "twitter-proxy.php?op=search",
 					data: {
+						result_type: "recent",
 						geocode: currentLat+","+currentLong+","+radius,
 						count: 100
 					},
@@ -132,7 +133,7 @@ $(document).ready(function() {
 	document.body.appendChild(tweetBox);
 	tweetBox.style.zIndex = "99999";
 	tweetBox.style.backgroundColor = "#fff";
-	tweetBox.style.height = "800px";
+	tweetBox.style.height = "65%";
 	tweetBox.style.width = "500px";
 	tweetBox.style.position = "absolute";
 	tweetBox.style.right = "5%";
