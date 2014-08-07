@@ -36,9 +36,9 @@ var twitterMapApi = (function(options) {
 				});
 
 				currentLat = results[0].geometry.location.k;
-				currentLong = results[0].geometry.location.A;
+				currentLong = results[0].geometry.location.B;
 
-				console.log(currentLat+", "+currentLong);
+				// console.log(currentLat+", "+currentLong);
 
 				var radius = "20mi";
 
